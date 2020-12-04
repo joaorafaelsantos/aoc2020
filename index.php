@@ -3,12 +3,11 @@
 require_once __DIR__ . '/vendor/autoload.php';
 
 use App\Helpers\File;
-use App\Day2\Part2;
+use App\Day3\Part1;
 
-$p2 = new Part2();
+$p1 = new Part1();
 
-$inputArray = File::toArray("app/Day2/input1.txt");
-$passwords = $p2->transformInputArrayIntoPasswords($inputArray);
+$data = File::toArray("app/Day3/input1.txt");
 
 // Puzzle solution
-echo sizeof($p2->getValidPasswords($passwords));
+echo $p1->getNumberOfTrees($data);
