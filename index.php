@@ -3,11 +3,11 @@
 require_once __DIR__ . '/vendor/autoload.php';
 
 use App\Helpers\File;
-use App\Day4\Part1;
+use App\Day4\Part2;
 
-$p1 = new Part1();
+$p2 = new Part2();
 
 $data = File::toArrayWithEmptyLines("app/Day4/input1.txt");
 
 // Puzzle solution
-echo sizeof($p1->getValidPassports($data));
+echo sizeof($p2->getValidPassports($data));
