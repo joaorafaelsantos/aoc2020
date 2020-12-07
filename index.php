@@ -3,12 +3,12 @@
 require_once __DIR__ . '/vendor/autoload.php';
 
 use App\Helpers\File;
-use App\Day5\Part2;
+use App\Day6\Part1;
 
-$p2 = new Part2();
+$p1 = new Part1();
 
-$data = File::toArray("app/Day5/input1.txt");
+$data = File::toArrayWithEmptyLines("app/Day6/input1.txt");
 
 // Puzzle solution
-$seatsId = $p2->getSortedSeatsId($data);
-echo $p2->getMissingSeatId($seatsId);
+$sum = $p1->getSumOfCounts($data);
+echo $sum;
